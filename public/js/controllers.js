@@ -24,8 +24,12 @@ angular.module('myApp.controllers', []).
   controller('MyCtrl2', function ($scope) {
     // write Ctrl here
 
-      }).
+  }).
   controller('TodoCtrl', function ($scope) {
     // write Ctrl here
+
+  }).
+  controller('RegisterCtrl', function ($scope) {
+    //write Ctrl here
 
   });

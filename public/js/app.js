@@ -20,10 +20,14 @@ config(function ($routeProvider, $locationProvider) {
     }).
     when('/todo', {
       templateUrl: 'partials/todo',
-      controller:'TodoCtrl'
+      controller: 'TodoCtrl'
+    }).
+    when('/register', {
+      templateUrl: 'partials/register',
+      controller: 'RegisterCtrl'
     }).
     otherwise({
-      redirectTo: '/view1'
+      redirectTo: '/register'
     });
 
   $locationProvider.html5Mode(true);
