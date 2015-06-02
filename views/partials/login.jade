@@ -1,14 +1,11 @@
-h1 Login Page
+div.col-md-4.col-md-offset-4
+  h3 Login to your account
 
-form#registerForm
-      .formfield
-        .input.form-control Username:
-        | &#x9;&#x9;&#x9;&#x9;
-        input#username(type='text', name='username')
-
-      .formfield
-        .formfield--prompt Password:
-        | &#x9;&#x9;&#x9;
-        input#password(type='password', name='password')
-      | &#x9;&#x9;&#x9;
-      input.submitButton(type='submit')
+  form
+    div.form-group
+      label Username
+      input.form-controll(type='text', name ='username ')
+    div.form-group
+      label password
+      input.from-controll(type='password', name='password ')
+    input.btn.btn-default(type='submit', value='login')
