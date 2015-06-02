@@ -5,17 +5,19 @@ block body
     h2 Hello {{name}}
     ul.menu
       li
-        a(href='view1') view1
+        a(href='login') login
       li
-        a(href='view2') view2
+        a(href='logout') logout
 
     div(ng-view)
 
     div
-      | Angular seed app: v
       span(app-version)
 
     table.table
       tr
-        td Hello
-        td World
+        td Task
+        td Description
+        td Due Date
+        td Priority
+        td Completed

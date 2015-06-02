@@ -10,13 +10,17 @@ angular.module('myApp', [
 ]).
 config(function ($routeProvider, $locationProvider) {
   $routeProvider.
-    when('/view1', {
-      templateUrl: 'partials/partial1',
+    when('/login', {
+      templateUrl: 'partials/login',
       controller: 'MyCtrl1'
     }).
-    when('/view2', {
-      templateUrl: 'partials/partial2',
+    when('/logout', {
+      templateUrl: 'partials/logout',
       controller: 'MyCtrl2'
+    }).
+    when('/todo', {
+      templateUrl: 'partials/todo',
+      controller:'TodoCtrl'
     }).
     otherwise({
       redirectTo: '/view1'
